@@ -78,4 +78,4 @@ def main(
     generator.not_before = not_before
     generator.load_private_key(private_key_file)
     generator.generate()
-    print(generator.header) if authorization_header else generator.token
+    print(generator.header if authorization_header else generator.token)
